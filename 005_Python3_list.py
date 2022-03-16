@@ -1,10 +1,11 @@
 #coding: utf-8
 
 import gc
+import pprint
 
-listFlag = True
+listFlag = False
 tupleFlag = False
-dictFlag = False
+dictFlag = True
 
 if listFlag:
     alist = [1,2,3,4,5,6]
@@ -57,6 +58,7 @@ if tupleFlag:
 if dictFlag:
     adict = {"abc":9999, "xyz":7259 , 1:"icewindful" , 2:"speed" }
     bdict = {"qwe":9999, "asd":7259 , 3:"is good" , 4:"star" }
+    cdict = {"tuple":("a","b",3),"int":set([1,2,3,4]) }
     aitem = "cloud"
     akey = 9527
     bitem = "sky"
@@ -66,6 +68,8 @@ if dictFlag:
     print("{dict01} keys()\n{method}".format(dict01=adict ,method=adict.keys()))
     print("{dict01} values()\n{method}".format(dict01=adict ,method=adict.values()))
     print("{dict01} update()\n{method}".format(dict01=adict ,method=adict.update(bdict)))
+    pprint.pprint(cdict)
+    print(cdict)
 
     del adict , aitem , akey , bitem ,bkey
     gc.collect()

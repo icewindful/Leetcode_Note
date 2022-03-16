@@ -1,5 +1,9 @@
+#coding: utf-8
+
 import calendar
 import datetime
+import gc
+
 class MyCalendar(calendar.HTMLCalendar):
     def lastmonth(self, theyear, themonth):
         '''last month day'''
@@ -63,3 +67,5 @@ chunk=c.formatmonth(2022, 1)
 f=open("c.html","w+")
 f.write(chunk)
 f.close
+
+gc.collect()
