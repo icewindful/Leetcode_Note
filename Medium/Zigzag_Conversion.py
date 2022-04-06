@@ -20,10 +20,10 @@ class Solution1:
             # if (i%N) == 0 :
             #     print("no use check 【if i % N < numRows else N - (i % N )")
             #     pass
-            print("i % N = {} , N - (i%N) = {}".format((i%N),(N-(i%N))))
+            #print("i % N = {} , N - (i%N) = {}".format((i%N),(N-(i%N))))
             print("str = {str}, i={char} , pos = {array}".format(str = s[i] , char = i, array = pos))
             res[pos] += s[i]
-            #print(res)
+            print(res)
         return ''.join(res)
 
 class Solution2:
