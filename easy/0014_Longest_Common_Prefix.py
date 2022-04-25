@@ -21,4 +21,4 @@ class Solution:
 if TestFlag :
     print("{}".format(Solution.longestCommonPrefix(1,TestStrs01)))
 
-    
+gc.collect()
